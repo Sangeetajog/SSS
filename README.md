@@ -1,1 +1,1 @@
-# SSS
+Github installation
