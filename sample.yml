@@ -1,0 +1,18 @@
+---
+- hosts: all
+become: yes
+tasks: 
+    - name: Install tree
+      apt:
+        name: tree
+        state: present
+    
+    - name: Install Apache2
+      apt:
+        name: Apache2
+        state: present
+    
+    - name: Apache service
+      Service: 
+        name: Apache2
+        state: started
