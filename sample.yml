@@ -13,6 +13,6 @@
         state: absent
     
     - name: Apache service
-      Service: 
+      service: 
         name: Apache2
         state: started
