@@ -1,8 +1,8 @@
 --- 
-- hosts: all
+-hosts: all
   become: yes
   tasks:
-    - name: i want to install open jdk on ubuntu server
+    -name: i want to install open jdk on ubuntu server
       apt: 
       name: openjdk-8-jre
       state: present
