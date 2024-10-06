@@ -2,9 +2,9 @@
 - hosts: all
   become: yes
   tasks: 
-    - name: Install tree
+    - name: Install nginx
       apt:
-        name: tree
+        name: nginx
         state: present
     
     - name: Install apache2
