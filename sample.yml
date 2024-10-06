@@ -6,13 +6,8 @@
       apt:
         name: nginx
         state: present
-    
-    - name: Install apache2
-      apt:
-        name: apache2
-        state: absent
-    
-    - name: apache service
-      service: 
-        name: apache2
+    - name: nginx service
+      service:
+        name: nginx
         state: started
+   
